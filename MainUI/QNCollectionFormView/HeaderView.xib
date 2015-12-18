@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderView" id="JTk-dO-4YA" customClass="HeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="202" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gc-KD-65A">
+                    <rect key="frame" x="10" y="10" width="182" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="jSe-2F-sqY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5n7-dR-dyw">
+                    <rect key="frame" x="0.0" y="49" width="202" height="1"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="UGf-Ku-22Z"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="5n7-dR-dyw" firstAttribute="trailing" secondItem="JTk-dO-4YA" secondAttribute="trailing" id="1Eh-4k-E0J"/>
+                <constraint firstItem="0gc-KD-65A" firstAttribute="top" secondItem="JTk-dO-4YA" secondAttribute="top" constant="10" id="FDf-eK-fOw"/>
+                <constraint firstItem="5n7-dR-dyw" firstAttribute="leading" secondItem="JTk-dO-4YA" secondAttribute="leading" id="Ham-UG-TUo"/>
+                <constraint firstItem="5n7-dR-dyw" firstAttribute="bottom" secondItem="JTk-dO-4YA" secondAttribute="bottom" id="WmF-mF-Rlk"/>
+                <constraint firstItem="5n7-dR-dyw" firstAttribute="bottom" secondItem="JTk-dO-4YA" secondAttribute="bottom" id="c5i-Q5-Heg"/>
+                <constraint firstItem="0gc-KD-65A" firstAttribute="leading" secondItem="JTk-dO-4YA" secondAttribute="leading" constant="10" id="esG-C7-BWI"/>
+                <constraint firstAttribute="trailing" secondItem="0gc-KD-65A" secondAttribute="trailing" constant="10" id="zIO-cs-TUS"/>
+            </constraints>
+            <connections>
+                <outlet property="titleLabel" destination="0gc-KD-65A" id="lEX-8u-F2a"/>
+                <outlet property="titleLable" destination="0gc-KD-65A" id="D4n-uP-IW5"/>
+            </connections>
+            <point key="canvasLocation" x="419" y="-297"/>
+        </collectionReusableView>
+    </objects>
+</document>
