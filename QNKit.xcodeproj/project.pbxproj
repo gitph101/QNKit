@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E23AAF191C29542C00221E45 /* QNCollectionFormViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E23AAF181C29542C00221E45 /* QNCollectionFormViewCell.xib */; };
 		E23B5F971C23995900A71050 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E23B5F8F1C23995900A71050 /* DataSource.m */; };
 		E23B5F981C23995900A71050 /* QNCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E23B5F921C23995900A71050 /* QNCell.m */; };
 		E23B5F991C23995900A71050 /* QNCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E23B5F931C23995900A71050 /* QNCell.xib */; };
@@ -15,7 +16,6 @@
 		E23B5FA21C23C8DC00A71050 /* QNCollectionFormDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E23B5FA11C23C8DC00A71050 /* QNCollectionFormDataSource.m */; };
 		E23B5FA51C23C98500A71050 /* QNCollectionFormLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E23B5FA41C23C98500A71050 /* QNCollectionFormLayout.m */; };
 		E23B5FA91C23C9B000A71050 /* QNCollectionFormViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E23B5FA71C23C9B000A71050 /* QNCollectionFormViewCell.m */; };
-		E23B5FAA1C23C9B000A71050 /* QNCollectionFormViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E23B5FA81C23C9B000A71050 /* QNCollectionFormViewCell.xib */; };
 		E23B5FAD1C23C9DE00A71050 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E23B5FAC1C23C9DE00A71050 /* HeaderView.m */; };
 		E23B5FAF1C23CA5E00A71050 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E23B5FAE1C23CA5E00A71050 /* HeaderView.xib */; };
 		E23B5FB31C23CB2700A71050 /* QNSampleMode.m in Sources */ = {isa = PBXBuildFile; fileRef = E23B5FB21C23CB2700A71050 /* QNSampleMode.m */; };
@@ -49,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E23AAF181C29542C00221E45 /* QNCollectionFormViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QNCollectionFormViewCell.xib; sourceTree = "<group>"; };
 		E23B5F8E1C23995900A71050 /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
 		E23B5F8F1C23995900A71050 /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
 		E23B5F911C23995900A71050 /* QNCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNCell.h; sourceTree = "<group>"; };
@@ -65,7 +66,6 @@
 		E23B5FA41C23C98500A71050 /* QNCollectionFormLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNCollectionFormLayout.m; sourceTree = "<group>"; };
 		E23B5FA61C23C9B000A71050 /* QNCollectionFormViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNCollectionFormViewCell.h; sourceTree = "<group>"; };
 		E23B5FA71C23C9B000A71050 /* QNCollectionFormViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNCollectionFormViewCell.m; sourceTree = "<group>"; };
-		E23B5FA81C23C9B000A71050 /* QNCollectionFormViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QNCollectionFormViewCell.xib; sourceTree = "<group>"; };
 		E23B5FAB1C23C9DE00A71050 /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
 		E23B5FAC1C23C9DE00A71050 /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
 		E23B5FAE1C23CA5E00A71050 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
@@ -169,7 +169,7 @@
 				E23B5FA41C23C98500A71050 /* QNCollectionFormLayout.m */,
 				E23B5FA61C23C9B000A71050 /* QNCollectionFormViewCell.h */,
 				E23B5FA71C23C9B000A71050 /* QNCollectionFormViewCell.m */,
-				E23B5FA81C23C9B000A71050 /* QNCollectionFormViewCell.xib */,
+				E23AAF181C29542C00221E45 /* QNCollectionFormViewCell.xib */,
 				E23B5FAB1C23C9DE00A71050 /* HeaderView.h */,
 				E23B5FAC1C23C9DE00A71050 /* HeaderView.m */,
 				E23B5FAE1C23CA5E00A71050 /* HeaderView.xib */,
@@ -386,9 +386,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2AE6F7C1C1FE73E006FEE03 /* LaunchScreen.storyboard in Resources */,
-				E23B5FAA1C23C9B000A71050 /* QNCollectionFormViewCell.xib in Resources */,
 				E2AE6F791C1FE73E006FEE03 /* Assets.xcassets in Resources */,
 				E23B5FAF1C23CA5E00A71050 /* HeaderView.xib in Resources */,
+				E23AAF191C29542C00221E45 /* QNCollectionFormViewCell.xib in Resources */,
 				E23B5F991C23995900A71050 /* QNCell.xib in Resources */,
 				E2AE6F741C1FE73E006FEE03 /* Main.storyboard in Resources */,
 			);
@@ -572,6 +572,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SFCIRI.QNKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -584,6 +585,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SFCIRI.QNKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

@@ -30,9 +30,27 @@
 
 - (void)generateSampleModeData
 {
-    for (NSUInteger idx = 0; idx < 7*24; idx++) {
-        QNSampleMode *mode = [QNSampleMode randomMode];
-        [self.dataSource addObject:mode];
+    //x轴数据
+//    for (NSUInteger idx = 0; idx < 7; idx++) {
+//        QNSampleMode *mode = [QNSampleMode randomMode];
+//        [self.dataSource addObject:mode];
+//    }
+//    
+//    //y轴数据
+//    for (NSUInteger idx = 0; idx < 24; idx++) {
+//        QNSampleMode *mode = [QNSampleMode randomMode];
+//        [self.dataSource addObject:mode];
+//    }
+    
+    //cell 数据
+    for (NSUInteger idx = 0; idx < 7; idx++) {
+        for (NSUInteger jdx = 0; jdx < 24; jdx++) {
+            QNSampleMode *mode = [QNSampleMode randomMode];
+            mode.numberX = idx;
+            mode.numberY = jdx;
+            mode.title = @"数据";
+            [self.dataSource addObject:mode];
+        }
     }
 }
 
@@ -71,6 +89,7 @@
     QNCollectionFormViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"QNCollectionFormViewCell" forIndexPath:indexPath];
     
     if (self.configureCellBlock) {
+        
         self.configureCellBlock(cell, indexPath, event);
     }
     return cell;

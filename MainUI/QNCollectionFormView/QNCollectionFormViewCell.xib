@@ -7,17 +7,19 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="QNCollectionFormViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="324" height="52"/>
-            <autoresizingMask key="autoresizingMask"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="QNCollectionFormViewCell" id="89t-cy-Deh" customClass="QNCollectionFormViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="409" height="86"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="324" height="52"/>
+                <rect key="frame" x="0.0" y="0.0" width="409" height="86"/>
+                <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="titleLable" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKM-2q-JQt">
-                        <rect key="frame" x="0.0" y="0.0" width="324" height="52"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMo-X7-KK5">
+                        <rect key="frame" x="0.0" y="0.0" width="409" height="86"/>
                         <animations/>
+                        <color key="backgroundColor" red="0.9426800768626018" green="1" blue="0.94812397411476246" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -25,11 +27,17 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <animations/>
-            <size key="customSize" width="324" height="52"/>
+            <constraints>
+                <constraint firstItem="cMo-X7-KK5" firstAttribute="top" secondItem="89t-cy-Deh" secondAttribute="top" id="BFz-SV-jiw"/>
+                <constraint firstAttribute="trailing" secondItem="cMo-X7-KK5" secondAttribute="trailing" id="CGG-8B-kHO"/>
+                <constraint firstItem="cMo-X7-KK5" firstAttribute="leading" secondItem="89t-cy-Deh" secondAttribute="leading" id="Ulp-bt-FUg"/>
+                <constraint firstAttribute="bottom" secondItem="cMo-X7-KK5" secondAttribute="bottom" id="cnF-cD-NiX"/>
+            </constraints>
+            <size key="customSize" width="409" height="86"/>
             <connections>
-                <outlet property="titleLable" destination="IKM-2q-JQt" id="1yo-L3-3C2"/>
+                <outlet property="titleLabel" destination="cMo-X7-KK5" id="eFj-fH-GH7"/>
             </connections>
-            <point key="canvasLocation" x="435" y="385"/>
+            <point key="canvasLocation" x="191.5" y="258"/>
         </collectionViewCell>
     </objects>
 </document>
