@@ -24,5 +24,10 @@
 - (void)removeAssociatedValues;
 - (id)getAssociatedValueForKey:(void *)key;
 + (NSString *)className;
-- (NSString *)className ;
+- (NSString *)className;
+
+- (NSArray *)allMemberVariables;
+- (NSDictionary *)allPropertyNamesAndValues;
+
+
 @end

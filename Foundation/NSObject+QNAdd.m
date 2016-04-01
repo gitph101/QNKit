@@ -322,6 +322,46 @@ struct dummy arg = va_arg(args, struct dummy); \
 - (NSString *)className {
     return [NSString stringWithUTF8String:class_getName([self class])];
 }
+//获取类别的成员变量
+- (NSArray *)allMemberVariables {
+    unsigned int count = 0;
+    Ivar *ivars = class_copyIvarList([self class], &count);
+    NSMutableArray *results = [[NSMutableArray alloc] init];
+    for (NSUInteger i = 0; i < count; ++i) {
+        Ivar variable = ivars[i];
+        const char *name = ivar_getName(variable);
+        NSString *varName = [NSString stringWithUTF8String:name];
+        NSLog(@"%@",varName);
+        [results addObject:varName];
+    }
+    
+    return results;
+}
+//获取对象的属性值
+- (NSDictionary *)allPropertyNamesAndValues
+{
+    NSMutableDictionary *resultDict = [NSMutableDictionary dictionary];
+    
+    unsigned int outCount;
+    objc_property_t *properties = class_copyPropertyList([self class], &outCount);
+    
+    for (int i = 0; i < outCount; i++) {
+        objc_property_t property = properties[i];
+        const char *name = property_getName(property);
+        // 得到属性名
+        NSString *propertyName = [NSString stringWithUTF8String:name];
+        // 获取属性值
+        id propertyValue = [self valueForKey:propertyName];
+        
+        if (propertyValue && propertyValue != nil) {
+            [resultDict setObject:propertyValue forKey:propertyName];
+        }
+    }
+    
+    // 记得释放
+    free(properties);
+    return resultDict;
+}
 
 
 @end

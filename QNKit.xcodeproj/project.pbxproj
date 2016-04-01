@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E21807651C4F5875003F04C2 /* QNKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E21807641C4F5875003F04C2 /* QNKeyboardManager.m */; };
 		E23AAF191C29542C00221E45 /* QNCollectionFormViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E23AAF181C29542C00221E45 /* QNCollectionFormViewCell.xib */; };
 		E23B5F971C23995900A71050 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E23B5F8F1C23995900A71050 /* DataSource.m */; };
 		E23B5F981C23995900A71050 /* QNCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E23B5F921C23995900A71050 /* QNCell.m */; };
@@ -49,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E21807631C4F5875003F04C2 /* QNKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNKeyboardManager.h; sourceTree = "<group>"; };
+		E21807641C4F5875003F04C2 /* QNKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNKeyboardManager.m; sourceTree = "<group>"; };
 		E23AAF181C29542C00221E45 /* QNCollectionFormViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QNCollectionFormViewCell.xib; sourceTree = "<group>"; };
 		E23B5F8E1C23995900A71050 /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
 		E23B5F8F1C23995900A71050 /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
@@ -78,6 +81,8 @@
 		E23CF1771C2292E000132770 /* NSObject+QNAddForAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+QNAddForAlertView.m"; sourceTree = "<group>"; };
 		E23CF1781C2292E000132770 /* UtilitiesConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilitiesConstants.h; sourceTree = "<group>"; };
 		E23CF1791C2292E000132770 /* UtilitiesMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilitiesMacro.h; sourceTree = "<group>"; };
+		E2A03BC31C4CEF6100BDC935 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		E2A03BC41C4CEF6100BDC935 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		E2AE6F661C1FE73E006FEE03 /* QNKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QNKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2AE6F6A1C1FE73E006FEE03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E2AE6F6C1C1FE73E006FEE03 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -120,6 +125,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E21807621C4F5845003F04C2 /* QNKeyboardManager */ = {
+			isa = PBXGroup;
+			children = (
+				E21807631C4F5875003F04C2 /* QNKeyboardManager.h */,
+				E21807641C4F5875003F04C2 /* QNKeyboardManager.m */,
+			);
+			path = QNKeyboardManager;
+			sourceTree = SOURCE_ROOT;
+		};
 		E23B5F8C1C23995900A71050 /* RootViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +261,7 @@
 		E2AE6F681C1FE73E006FEE03 /* QNKit */ = {
 			isa = PBXGroup;
 			children = (
+				E21807621C4F5845003F04C2 /* QNKeyboardManager */,
 				E23CF17C1C2295D500132770 /* MainUI */,
 				E23CF1721C2292E000132770 /* Foundation */,
 				E23CF1751C2292E000132770 /* SFUtility */,
@@ -423,6 +438,7 @@
 				E23B5F981C23995900A71050 /* QNCell.m in Sources */,
 				E23B5FAD1C23C9DE00A71050 /* HeaderView.m in Sources */,
 				E23B5F971C23995900A71050 /* DataSource.m in Sources */,
+				E21807651C4F5875003F04C2 /* QNKeyboardManager.m in Sources */,
 				E2AE6F6B1C1FE73E006FEE03 /* main.m in Sources */,
 				E23B5FB31C23CB2700A71050 /* QNSampleMode.m in Sources */,
 				E23CF17B1C2292E000132770 /* NSObject+QNAddForAlertView.m in Sources */,
@@ -468,6 +484,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				E2AE6F731C1FE73E006FEE03 /* Base */,
+				E2A03BC31C4CEF6100BDC935 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -476,6 +493,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				E2AE6F7B1C1FE73E006FEE03 /* Base */,
+				E2A03BC41C4CEF6100BDC935 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -572,7 +590,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SFCIRI.QNKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -585,7 +603,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SFCIRI.QNKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
